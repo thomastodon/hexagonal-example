@@ -1,4 +1,0 @@
-dependencies {
-    compile project(":backend:application")
-    testCompile group: 'org.springframework', name: 'spring-test', version: '5.0.7.RELEASE'
-}

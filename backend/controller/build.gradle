@@ -2,4 +2,7 @@ dependencies {
     compile project(":backend:core")
 
     compile group: 'org.springframework', name: 'spring-web', version: '5.0.7.RELEASE'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.3.RELEASE'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '5.0.7.RELEASE'
 }
