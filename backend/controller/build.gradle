@@ -1,0 +1,5 @@
+dependencies {
+    compile project(":backend:core")
+
+    compile group: 'org.springframework', name: 'spring-web', version: '5.0.7.RELEASE'
+}

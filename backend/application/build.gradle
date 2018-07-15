@@ -1,0 +1,6 @@
+dependencies {
+    compile project(":backend:core")
+    compile project(":backend:controller")
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.3.RELEASE'
+}

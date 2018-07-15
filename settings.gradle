@@ -1,0 +1,6 @@
+rootProject.name = 'hexagonal-sample'
+include 'backend:core'
+include 'backend:controller'
+include 'backend:application'
+include 'integration-test'
+
