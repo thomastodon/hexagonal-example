@@ -3,7 +3,7 @@ package io.thomastodon.hexagonal.controller
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import io.thomastodon.hexagonal.core.domain.Strategy
-import io.thomastodon.hexagonal.core.usecase.strategy.CreateStrategyUseCase
+import io.thomastodon.hexagonal.core.usecase.CreateStrategyUseCase
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested

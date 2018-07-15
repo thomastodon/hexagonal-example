@@ -1,7 +1,7 @@
 package io.thomastodon.hexagonal.controller
 
 import io.thomastodon.hexagonal.core.domain.Strategy
-import io.thomastodon.hexagonal.core.usecase.strategy.CreateStrategyUseCase
+import io.thomastodon.hexagonal.core.usecase.CreateStrategyUseCase
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

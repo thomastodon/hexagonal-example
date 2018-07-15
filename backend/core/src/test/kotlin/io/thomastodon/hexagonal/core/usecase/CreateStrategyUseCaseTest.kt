@@ -3,9 +3,6 @@ package io.thomastodon.hexagonal.core.usecase
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import io.thomastodon.hexagonal.core.domain.Strategy
-import io.thomastodon.hexagonal.core.usecase.strategy.StrategyRepository
-import io.thomastodon.hexagonal.core.usecase.strategy.CreateStrategyUseCase
-import io.thomastodon.hexagonal.core.usecase.strategy.StrategyPublisher
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
@@ -24,7 +21,7 @@ class CreateStrategyUseCaseTest {
     @Nested
     inner class `when creating a strategy` {
 
-        val strategy = Strategy(id = "abc")
+        private val strategy = Strategy(id = "abc")
 
         @BeforeEach
         internal fun setUp() {

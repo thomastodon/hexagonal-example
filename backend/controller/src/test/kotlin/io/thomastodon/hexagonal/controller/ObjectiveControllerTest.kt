@@ -3,7 +3,7 @@ package io.thomastodon.hexagonal.controller
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import io.thomastodon.hexagonal.core.domain.Objective
-import io.thomastodon.hexagonal.core.usecase.objective.CreateObjectiveUseCase
+import io.thomastodon.hexagonal.core.usecase.AddObjectiveToStrategyUseCase
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
@@ -16,13 +16,13 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders
 
 class ObjectiveControllerTest {
 
-    private val mockCreateObjectiveUseCase: CreateObjectiveUseCase = mock()
+    private val mockAddObjectiveToStrategyUseCase: AddObjectiveToStrategyUseCase = mock()
     private lateinit var objectiveController: ObjectiveController
     private lateinit var mockMvc: MockMvc
 
     @BeforeEach
     fun setUp() {
-        objectiveController = ObjectiveController(mockCreateObjectiveUseCase, ObjectiveDtoToObjectiveTranslator())
+        objectiveController = ObjectiveController(mockAddObjectiveToStrategyUseCase, ObjectiveDtoToObjectiveTranslator())
 
         mockMvc = MockMvcBuilders.standaloneSetup(objectiveController).build()
     }
@@ -49,7 +49,7 @@ class ObjectiveControllerTest {
 
         @Test
         fun `it delegates to the use case`() {
-            verify(mockCreateObjectiveUseCase).create(Objective(id = "def"))
+            verify(mockAddObjectiveToStrategyUseCase).add("abc", Objective(id = "def"))
         }
     }
 }
