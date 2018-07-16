@@ -3,4 +3,7 @@ dependencies {
     compile project(":backend:controller")
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.3.RELEASE'
+
+    testCompile group: 'org.springframework', name: 'spring-test', version: '5.0.7.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.3.RELEASE'
 }
