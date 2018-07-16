@@ -5,7 +5,7 @@ import io.thomastodon.hexagonal.core.domain.Strategy
 
 interface StrategyRepository {
 
-    fun save(Strategy: Strategy)
+    fun save(strategy: Strategy)
 
     fun findById(id: String): Strategy
 

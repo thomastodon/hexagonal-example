@@ -1,0 +1,15 @@
+apply plugin: 'org.flywaydb.flyway'
+
+dependencies {
+    compile project(":backend:core")
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.0.7.RELEASE'
+    compile group: 'org.flywaydb', name: 'flyway-core', version: '3.0'
+}
+
+flyway {
+    url = "jdbc:mysql://localhost:3306/database?useSSL=false"
+    user = 'admin'
+    password = 'admin'
+}

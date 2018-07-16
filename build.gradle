@@ -8,6 +8,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.junit.platform:junit-platform-gradle-plugin:$junit_platform_version"
         classpath "org.springframework.boot:spring-boot-gradle-plugin:1.4.4.RELEASE"
+        classpath "org.flywaydb:flyway-gradle-plugin:5.0.7"
     }
 }
 
